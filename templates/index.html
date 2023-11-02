@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction using Machine Learning</title>
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Disease Prediction using ML<span></span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Contact</a></li>
+                <li><a href="#contact" class="menu-btn">Predict</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Disease Prediction</h2>
+            <div class="contact-content">
+
+
+                
+                <div class="column left">
+                   
+
+                    <form method="POST" action="/predict">
+               
+
+
+                       
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-1</span>
+                          <input type="text" name="symptom1" placeholder="Symptom 1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-2</span>
+                          <input type="text" name="symptom2" placeholder="Symptom 2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-3</span>
+                          <input type="text" name="symptom3" placeholder="Symptom 3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-4</span>
+                          <input type="text" name="symptom4" placeholder="Symptom 4" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-5</span>
+                          <input type="text" name="symptom5" placeholder="Symptom 5" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-6</span>
+                          <input type="text" name="symptom6" placeholder="Symptom 6" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-7</span>
+                          <input type="text" name="symptom7" placeholder="Symptom 7" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-8</span>
+                          <input type="text" name="symptom8" placeholder="Symptom 8" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-9</span>
+                          <input type="text" name="symptom9" placeholder="Symptom 9" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Symptom-10</span>
+                          <input type="text" name="symptom10" placeholder="Symptom 10" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        
+      
+                      
+                      <button type="submit">submit</button>
+                      </form>
+                        
+                </div>
+                <div class="column right">
+                    
+                    <ul class="list-group">
+                        
+
+                        <li class="list-group-item"> weight_gain  </li><li class="list-group-item">anxiety </li>
+                        <li class="list-group-item"> cold_hands_and_feet</li>
+                        <li class="list-group-item">irregular_sugar_level</li>
+                            <li class="list-group-item"> yellow_urine</li> <li class="list-group-item">acute_liver_failure</li> 
+                            <li class="list-group-item">swelling_of_stomach</li>
+                            <li class="list-group-item"> drying_and_tingling_lips </li>
+                            <li class="list-group-item">continuous_feel_of_urine</li>
+                                <li class="list-group-item">internal_itching</li><li class="list-group-item"> polyuria</li>
+                                 <li class="list-group-item">mood_swings </li> 
+                                 
+                    
+                                 <li class="list-group-item">receiving_unsterile_injections</li>
+                                <li class="list-group-item">stomach_bleeding </li><li class="list-group-item">prominent_veins_on_calf</li> 
+                                <li class="list-group-item">loss_of_smell </li><li class="list-group-item">throat_irritation</li>
+                                <li class="list-group-item"> redness_of_eye </li><li class="list-group-item">sinus_pressure</li> 
+                                <li class="list-group-item">runny_nose</li> <li class="list-group-item">pain_during_bowel_movement </li>
+                                <li class="list-group-item">  pain_in_anal_region</li><li class="list-group-item"> cramps</li>
+                                <li class="list-group-item"> bruising</li>
+                                <li class="list-group-item">enlarged_thyroid</li><li class="list-group-item"> brittle_nails</li>
+                                <li class="list-group-item"> swollen_extremeties</li> 
+                                <li class="list-group-item">slurred_speech</li>
+                                <li class="list-group-item">distention_of_abdomen</li><li class="list-group-item"> fluid_overload.1 </li>
+                                <li class="list-group-item">skin_peeling</li><li class="list-group-item"> silver_like_dusting</li>
+                                 <li class="list-group-item">small_dents_in_nails</li> <li class="list-group-item">blister</li> 
+                                 <li class="list-group-item">red_sore_around_nose</li><li class="list-group-item"> bloody_stool</li>
+                                 <li class="list-group-item"> swollen_blood_vessels</li><li class="list-group-item"> hip_joint_pain</li>
+                                 <li class="list-group-item"> painful_walking</li> <li class="list-group-item">spinning_movements</li>
+                                 <li class="list-group-item"> altered_sensorium</li> <li class="list-group-item">toxic_look_(typhos)</li></ul>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="static\script.js"></script>
+ 
+
+</body>
+</html>
